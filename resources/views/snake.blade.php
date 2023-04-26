@@ -106,33 +106,33 @@
 			else if(dx != 0 || dy != 0)move_snake();
 			else{ //draws the head
 				var img = document.createElement("img");
-				img.src = "tright.gif";
+				img.src = "/images/snake/tright.gif";
 				snakeboard_ctx.drawImage(img, snake[0].x -28,snake[0].y -30, 100,100);
 				
 				//loads on the rest of the parts
 				var img = document.createElement("img");
-				img.src = "topleft.png";
+				img.src = "/images/snake/topleft.png";
 				snakeboard_ctx.drawImage(img, 1,1, 1,1);
 				var img = document.createElement("img");
-				img.src = "topright.png";
+				img.src = "/images/snake/topright.png";
 				snakeboard_ctx.drawImage(img, 1,1, 1,1);
 				var img = document.createElement("img");
-				img.src = "bottomleft.png";
+				img.src = "/images/snake/bottomleft.png";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				var img = document.createElement("img");
-				img.src = "bottomright.png";
+				img.src = "/images/snake/bottomright.png";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				var img = document.createElement("img");
-				img.src = "tleft.gif";
+				img.src = "/images/snake/tleft.gif";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				var img = document.createElement("img");
-				img.src = "tdown.gif";
+				img.src = "/images/snake/tdown.gif";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				var img = document.createElement("img");
-				img.src = "tup.gif";
+				img.src = "/images/snake/tup.gif";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				var img = document.createElement("img");
-				img.src = "woodup.png";
+				img.src = "/images/snake/woodup.png";
 				snakeboard_ctx.drawImage(img, 0,0, 1,1);
 				
 			}
@@ -170,7 +170,7 @@
 	function draw_fruit() {
 		
 		var img = document.createElement("img");
-		img.src = "sudowoodo.png";
+		img.src = "/images/snake/sudowoodo.png";
 		snakeboard_ctx.drawImage(img, fruit_x-15, fruit_y-13, 85,75);
 			
 		return;
@@ -209,19 +209,19 @@
 		var img = document.createElement("img");
 		
 		if (dx === -50){
-			img.src = "tleft.gif";
+			img.src = "/images/snake/tleft.gif";
 			snakeboard_ctx.drawImage(img, snake[0].x -28,snake[0].y -30, 100,100);
 			}
 		else if (dy === -50){
-			img.src = "tup.gif";
+			img.src = "/images/snake/tup.gif";
 			snakeboard_ctx.drawImage(img, snake[0].x -27,snake[0].y -27, 100,100);
 			}
 		else if (dy === 50){
-			img.src = "tdown.gif";
+			img.src = "/images/snake/tdown.gif";
 			snakeboard_ctx.drawImage(img, snake[0].x -27,snake[0].y -33, 100,100);
 			}
 		else if (dx == 50){
-		img.src = "tright.gif";
+		img.src = "/images/snake/tright.gif";
 		snakeboard_ctx.drawImage(img, snake[0].x -28,snake[0].y -30, 100,100);
 		}
 		
@@ -236,13 +236,13 @@
 		if (ahead === behind){
 			if (ahead === 'right' || ahead == 'left'){
 				var img = document.createElement("img");
-				img.src = "woodmid.png";
+				img.src = "/images/snake/woodmid.png";
 				snakeboard_ctx.drawImage(img, snake[snakepart].x-72, snake[snakepart].y-60, 285,150);
 			
 			}
 			else {
 				var img = document.createElement("img");
-				img.src = "woodup.png";
+				img.src = "/images/snake/woodup.png";
 				snakeboard_ctx.drawImage(img, snake[snakepart].x-37, snake[snakepart].y-72, 150,285);
 			
 			}
@@ -250,26 +250,26 @@
 		//bottom left
 		else if (ahead === 'right' && behind === 'down' || (ahead === 'up' && behind === 'left')){
 			var img = document.createElement("img");
-			img.src = "bottomleft.png";
+			img.src = "/images/snake/bottomleft.png";
 			snakeboard_ctx.drawImage(img, snake[snakepart].x-138, snake[snakepart].y-96, 310,310);
 			
 		}
 		// top left	
 		else if (ahead === 'right' && behind === 'up' || (ahead === 'down' && behind === 'left')){
 			var img = document.createElement("img");
-			img.src = "topleft.png";
+			img.src = "/images/snake/topleft.png";
 			snakeboard_ctx.drawImage(img, snake[snakepart].x-73, snake[snakepart].y-105, 310,310);
 		}
 		//bottom right	
 		else if (ahead === 'left' && behind === 'down' || (ahead === 'up' && behind === 'right')){
 			var img = document.createElement("img");
-			img.src = "bottomright.png";
+			img.src = "/images/snake/bottomright.png";
 			snakeboard_ctx.drawImage(img, snake[snakepart].x-180, snake[snakepart].y-157, 310,310);
 		}
 		//top right	
 		else if (ahead === 'left' && behind === 'up' ||(ahead === 'down' && behind === 'right')){
 			var img = document.createElement("img");
-			img.src = "topright.png";
+			img.src = "/images/snake/topright.png";
 			snakeboard_ctx.drawImage(img, snake[snakepart].x-180, snake[snakepart].y-105, 310,310);
 		}
 		
