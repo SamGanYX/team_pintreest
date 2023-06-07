@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8">
+    <div class="max-w-2xl mx-auto p-4 sm:p-6 lg:p-8" style="background-color: #378837; border-radius:25px; margin-top:20px;">
         <form method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data">
             @csrf
             <input type="file" class="form-control" name="image" />
