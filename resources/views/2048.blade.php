@@ -18,7 +18,7 @@
 <body>
 <header>
     <h1>2048</h1>
-    <a href="javascript:newgame();" id="newgamebutton"><button onClick="newgame()">New Game</button></a>
+    <a href="javascript:newgame();" id="newgamebutton"><button onClick="newgame()" style="color:#fff;">New Game</button></a>
 
     <p>Sudowoodo :o </p>
     <p>score : <span id="score">0</span></p>
