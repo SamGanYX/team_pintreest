@@ -14,7 +14,7 @@
         font-family: AppleColorEmoji;
         font-size: 15px;
         text-align: center;
-        padding: 20px 0;
+        /* padding: 20px 0; */
       }
 
       span, input, a, div, button {
@@ -304,7 +304,9 @@
     <div aria-live="assertive" class="feedback"></div>
 
     <!--  https://github.com/twitter/twemoji -->
-    @vite(['resources/js/minesweeper/sw.js', 'resources/js/minesweeper/twemoji.js'])
+
+    <script type="text/javascript" src="./js/minesweeper/sw.js"></script>
+    <script type="text/javascript" src="./js/minesweeper/twemoji.js"></script>
 
     <!-- Twemoji.js -->
     <script>

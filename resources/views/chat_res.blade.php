@@ -60,11 +60,11 @@
                     echo("Question: <br>");
                     echo($z);
                     echo("<br>Response:<br>");
-                    if(!$test_asking) {
+                    if($test_asking) {
                         // echo($z);
     
                         
-                        $open_ai_key = "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";
+                        $open_ai_key = "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";
                         $open_ai = new OpenAi($open_ai_key);
                         
                         $chat = $open_ai->chat([
@@ -130,10 +130,7 @@
                     </div>
 
                     <div id = "myDiv" style="display:none;">{{$true_text}}</div>
-                    
-                    <div id="secret" class="secret" style="display:none;">
-                        {{$true_text}}
-                    </div>
+                
                     <script>
                         function myFunction() {
                             var btn = document.getElementById("show-btn");
@@ -178,5 +175,5 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
-
+    
 </x-app-layout>

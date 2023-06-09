@@ -6,10 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
+
     <title>Game 2048</title>
 
-    @vite(['resources/css/2048.css'])
-
+    <link rel="stylesheet" href="./css/2048.css"></link>
     <script type="text/javascript" src="./js/2048/jquery.min.js"></script>
     <script type="text/javascript" src="./js/2048/support2048.js"></script>
     <script type="text/javascript" src="./js/2048/showanimation2048.js"></script>

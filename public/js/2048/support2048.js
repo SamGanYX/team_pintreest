@@ -34,14 +34,14 @@ function getNumberBackgroundColor( number ){
 function getNumberBackgroundImage( number ){
     switch( number ){
         case 2:return "./images/2048/2.png";break;
-        case 4:return "./images/2048/4.png";break;
-        case 8:return "./images/2048/8.png";break;
-        case 16:return "./images/2048/16.png";break;
-        case 32:return "./images/2048/32.png";break;
-        case 64:return "./images/2048/64.png";break;
-        case 128:return "./images/2048/128.png";break;
-        case 256:return "./images/2048/256.png";break;
-        case 512:return "./images/2048/512.png";break;
+        case 4:return "./images/2048/4.PNG";break;
+        case 8:return "./images/2048/8.PNG";break;
+        case 16:return "./images/2048/16.PNG";break;
+        case 32:return "./images/2048/32.PNG";break;
+        case 64:return "./images/2048/64.PNG";break;
+        case 128:return "./images/2048/128.PNG";break;
+        case 256:return "./images/2048/256.PNG";break;
+        case 512:return "./images/2048/512.PNG";break;
         case 1024:return "./images/2048/1024.png";break;
         case 2048:return "./images/2048/2048.png";break;
         case 4096:return "./images/2048/4096.jpg";break;
