@@ -268,7 +268,7 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" style="margin-top: 100px;">
       <button type="button" class="settings js-settings" aria-haspopup="true" aria-expanded="false" aria-label="Settings"></button>
       <div class="js-settings-popup settings-popup">
         <div class="flex" style="visibility: hidden;">
@@ -288,9 +288,9 @@
         <button class="js-popup-new-game btn" type="button">Save and restart game</button>
       </div>
       <button type="button" class="action-btn js-new-game" aria-label="New game">
-        <span class="default-emoji"></span>
-        <span id="result" class="result-emoji"></span>
-        <span style="float:left;">Restart</span>
+        <span class="default-emoji" style="float:left;"></span>
+        <span id="result" class="result-emoji" style="float:left;"></span>
+        <span style="float:left; margin-left: 20px;">Restart</span>
         
       </button>
       <div id="map" role="grid" aria-label="Mine field">
